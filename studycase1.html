@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Study case javaScript</title>
+        <link rel="stylesheet" href="stylejava.css">
+    </head>
+    <body>
+        <h2>Untuk Mendapatkan card Anda silahkan input form di bawah ini</h2>
+    <!-- form -->
+    <div class="col">
+        <form action="#">
+            <fieldset>
+                Nama : <br>
+                <input type="text" id="name"><br><br>
+                Job : <br>
+                <input type="text" id="Job"><br><br>
+                Email : <br>
+                <input type="email" id="email"><br><br>
+                Telp : <br>
+                <input type="text" id="telp"><br><br>
+                address : <br>
+                <textarea id="address"></textarea><br><br>
+
+                <input type="submit"  value="Submit">
+                <input type="reset"  value="Reset">
+
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- card -->
+    <script>
+        function renderCard(event){
+            event.preventDefault();
+                var div = document.createElement('div');
+
+                div.innerHTML = 
+                '<div class="col">
+                    </div>';
+            }
+
+    </script>
+    </body>
+</html>
